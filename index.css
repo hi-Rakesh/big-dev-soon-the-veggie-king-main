@@ -51,6 +51,15 @@ p {
 a {
   font-family: "Medium", sans-serif;
 }
+
+h4 {
+  font-family: "Regular", sans-serif;
+  font-size: 18px;
+}
+h3 {
+  font-family: "SemiBold", sans-serif;
+  font-size: 36px;
+}
 header {
   position: sticky;
   top: 0;
@@ -159,7 +168,7 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  width: 16.4rem;
+  width: 330px;
   height: 90vh;
   background-color: #2f7d33;
 }
@@ -210,10 +219,66 @@ header {
 }
 
 .subtitle {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: normal;
 }
 
+/*-----AboutUs Section------*/
+.about-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-shape {
+  position: absolute;
+  left: -180px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #2f7d33;
+}
+
+.about-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+}
+
+.about-img {
+  position: absolute;
+  left: 50px;
+}
+
+.about-img img {
+  width: 400px;
+}
+
+.about-details {
+  position: absolute;
+  right: 5rem;
+  width: 680px;
+}
+
+.section-heading {
+  color: #fb8d03;
+}
+
+.about-details h3 {
+  margin: 20px 0;
+}
+
+.about-details p {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 2rem;
+}
+/*-----Footer Section------*/
 .footer {
   position: absolute;
   bottom: 0;
