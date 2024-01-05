@@ -36,6 +36,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
 console.log(
   "%cProject by BigDevSoon",
   'font-size: 40px; font-weight: bold; color: #8A2BE2; font-family: "Comic Sans MS", cursive, sans-serif;'

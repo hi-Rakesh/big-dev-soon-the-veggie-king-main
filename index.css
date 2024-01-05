@@ -91,12 +91,15 @@ header {
   text-decoration: none;
   color: #000;
   font-family: "Medium", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   font-display: swap;
-  font-size: 18px;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
-
+.nav-menu li a:hover {
+  color: #fb8d03;
+}
 .nav-logo {
   display: block;
 }
@@ -401,7 +404,7 @@ header {
 }
 
 .contact-content {
-  margin: 20px 50px;
+  margin: 30px 30px;
 }
 
 .contact-info {
@@ -476,10 +479,13 @@ header {
   text-transform: uppercase;
   font-display: swap;
   font-size: 18px;
+  transition: color 0.3s ease;
 }
-
+.footer-links nav ul li a:hover {
+  color: #fb8d03;
+}
 .footer-text {
-  width: 30%; /* Adjust the width as needed */
+  width: 500px; /* Adjust the width as needed */
 }
 .footer-text p {
   font-size: 18px;
@@ -495,6 +501,13 @@ header {
   color: #fff;
   margin-right: 15px;
   text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+.footer-social-icons svg {
+  transition: transform 0.3s ease-in-out;
+}
+.footer-social-icons svg:hover {
+  transform: scale(1.2);
 }
 
 .footer-copyright {
