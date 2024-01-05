@@ -221,7 +221,7 @@ header {
 
 .subtitle {
   font-size: 1.5rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /*-----AboutUs Section------*/
@@ -391,6 +391,50 @@ header {
 
 .img-card img:hover {
   filter: opacity(100%);
+}
+/*----Contact Section-----*/
+.contact-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contact-content {
+  margin: 20px 50px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.info-card {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 150px;
+  margin: 10px;
+  text-align: center;
+}
+
+.info-card svg {
+  width: 100px;
+  height: 40px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.info-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.info-card p {
+  font-weight: bold;
+}
+
+.info-card svg:hover {
+  transform: scale(1.2);
 }
 
 /*-----Footer Section------*/
