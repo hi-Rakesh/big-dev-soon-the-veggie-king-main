@@ -38,6 +38,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -45,7 +46,7 @@ h1 {
 }
 
 p {
-  font-family: "Medium", sans-serif;
+  font-family: "Regular", sans-serif;
   color: #535252;
 }
 a {
@@ -270,13 +271,84 @@ header {
 }
 
 .about-details h3 {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .about-details p {
   font-size: 1.5rem;
   font-weight: normal;
   line-height: 2rem;
+}
+/*----Menu Section----*/
+.menu-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+  line-height: normal;
+}
+
+.sub-heading h3 {
+  margin: 10px 0;
+}
+.sub-heading p {
+  font-size: 18px;
+}
+.sub-heading {
+  text-align: center;
+}
+.food-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.food-card {
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  height: auto;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0 0 15px 15px;
+}
+.food-img {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  transition: 0.3s ease;
+}
+.food-img img {
+  width: 100%;
+  display: block;
+}
+
+.food-img img {
+  transition: transform 0.3s ease;
+}
+
+.food-card:hover .food-img img {
+  transform: scale(1.2);
+}
+.food-title {
+  font-family: "Relaway", sans-serif;
+  font-weight: 700;
+  padding: 15px 0 10px 20px;
+}
+
+.food-decs {
+  font-family: "Medium", sans-serif;
+  color: #535252;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  padding: 5px 0 20px 20px;
 }
 /*-----Footer Section------*/
 .footer {
