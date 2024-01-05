@@ -45,7 +45,8 @@ h1 {
   font-family: "Raleway", sans-serif;
 }
 
-p {
+p,
+span {
   font-family: "Regular", sans-serif;
   color: #535252;
 }
@@ -393,6 +394,7 @@ header {
   filter: opacity(100%);
 }
 /*----Contact Section-----*/
+
 .contact-section {
   text-align: center;
   padding: 50px 0;
@@ -438,21 +440,74 @@ header {
 }
 
 /*-----Footer Section------*/
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  text-align: center;
+.footer-section {
+  background-color: #e0e0e0;
+  color: #fff;
+  padding: 3 0px 0;
 }
 
-.footer a {
-  font-size: 14px;
-  font-weight: bold;
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 0 50px 0;
+}
+
+.footer-logo svg {
+  display: inline-block;
+}
+
+.footer-links nav ul {
+  list-style: none;
+  padding: 5px 0 0 0;
+  margin-left: 40px;
+}
+
+.footer-links nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-links nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Medium", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-display: swap;
+  font-size: 18px;
+}
+
+.footer-text {
+  width: 30%; /* Adjust the width as needed */
+}
+.footer-text p {
+  font-size: 18px;
+  line-height: 2rem;
+  font-weight: 600;
+}
+.footer-social-icons {
+  padding-top: 15px;
+  font-size: 24px;
+}
+
+.footer-social-icons a {
+  color: #fff;
+  margin-right: 15px;
   text-decoration: none;
 }
 
-.footer span {
-  font-size: 14px;
+.footer-copyright {
+  border-top: 1px solid #c3c3c3;
+  padding: 40px 0 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-copyright a,
+span {
+  text-decoration: none;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
 }
